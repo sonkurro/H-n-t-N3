@@ -59,10 +59,7 @@ body {
 
 .back p {
     margin: 5px 0;
-}
 
-.back p strong {
-    color: red; /* Màu chữ đỏ cho Âm Hán Việt */
 }
 
 .example {

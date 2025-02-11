@@ -61,7 +61,7 @@ body {
     margin: 5px 0;
 }
 
-.han-viet {
+.back p strong {
     color: red; /* Màu chữ đỏ cho Âm Hán Việt */
 }
 

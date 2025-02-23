@@ -45,12 +45,12 @@ body {
 }
 
 .front {
-    background-color: #fff;
+    background-color: #fac7c7;
     font-size: 4em;
 }
 
 .back {
-    background-color: #f9f9f9;
+    background-color: #fac7c7;
     transform: rotateY(180deg);
     flex-direction: column;
     align-items: flex-start;

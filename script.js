@@ -1,5 +1,5 @@
 const lessons = [
-[ // Bài 1
+    [ // Bài 1
         { vietnamese: "Tự do", kanji: "自由", hiragana: "じゆう", example: "自由な時間が必要です。" },
         { vietnamese: "Kỷ luật", kanji: "規律", hiragana: "きりつ", example: "規律を守ることは重要です。" }
     ],

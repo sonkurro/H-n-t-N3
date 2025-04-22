@@ -1,5 +1,5 @@
 const lessons = [
-    [ // Bài 1
+    [ // Bài 1 (Giữ nguyên từ yêu cầu trước)
         { vietnamese: "Nam giới", kanji: "男性", hiragana: "だんせい", example: "男性用の服を買いました。" },
         { vietnamese: "Nữ giới", kanji: "女性", hiragana: "じょせい", example: "女性が多い職場です。" },
         { vietnamese: "Cao tuổi", kanji: "高齢", hiragana: "こうれい", example: "高齢の方に席を譲りました。" },
@@ -31,8 +31,8 @@ const lessons = [
         { vietnamese: "Quá trình học", kanji: "学歴", hiragana: "がくれき", example: "学歴を重視する会社です。" },
         { vietnamese: "Lương", kanji: "給料", hiragana: "きゅうりょう", example: "給料が上がりました。" }
     ],
-    [ // Bài 2
-    { vietnamese: "Phỏng vấn", kanji: "面接", hiragana: "めんせつ", example: "就職の面接を受けました。" },
+    [ // Bài 2 (Dựa trên PDF và bổ sung)
+        { vietnamese: "Phỏng vấn", kanji: "面接", hiragana: "めんせつ", example: "就職の面接を受けました。" },
     { vietnamese: "Giải lao", kanji: "休憩", hiragana: "きゅうけい", example: "少し休憩しましょう。" },
     { vietnamese: "Tham quan", kanji: "観光", hiragana: "かんこう", example: "京都で観光を楽しみました。" },
     { vietnamese: "Về nước", kanji: "帰国", hiragana: "きこく", example: "来週、帰国する予定です。" },
@@ -62,8 +62,8 @@ const lessons = [
     { vietnamese: "Kỷ niệm", kanji: "思い出", hiragana: "おもいで", example: "楽しい思い出がたくさんあります。" },
     { vietnamese: "Đùa", kanji: "冗談", hiragana: "じょうだん", example: "それは冗談ですよね？" },
     { vietnamese: "Mục đích", kanji: "目的", hiragana: "もくてき", example: "旅行の目的は観光です。" }
-    ],
-    [ // Bài 3
+],
+[ // Bài 3
     { vietnamese: "Hứa hẹn", kanji: "約束", hiragana: "やくそく", example: "友達と約束をしました。" },
     { vietnamese: "Nói chuyện", kanji: "お喋り", hiragana: "おしゃべり", example: "彼とお喋りするのが好きです。" },
     { vietnamese: "Ngại ngần", kanji: "遠慮", hiragana: "えんりょ", example: "どうぞ遠慮しないでください。" },
@@ -94,114 +94,6 @@ const lessons = [
     { vietnamese: "Tiền lẻ", kanji: "小銭", hiragana: "こぜに", example: "自動販売機に小銭を使います。" },
     { vietnamese: "Chiêu đãi", kanji: "ご馳走", hiragana: "ごちそう", example: "友達にご馳走になりました。" },
     { vietnamese: "Tác giả", kanji: "作者", hiragana: "さくしゃ", example: "この本の作者は有名です。" }
-    ],
-    [ // Bài 4
-        { vietnamese: "Kiên nhẫn", kanji: "我慢", hiragana: "がまん", example: "我慢することが大切です。" },
-        { vietnamese: "Trách nhiệm", kanji: "責任", hiragana: "せきにん", example: "責任を持って仕事をします。" }
-    ],
-    [ // Bài 5
-        { vietnamese: "Sức khỏe", kanji: "健康", hiragana: "けんこう", example: "健康が一番大事です。" },
-        { vietnamese: "Thành công", kanji: "成功", hiragana: "せいこう", example: "努力すれば成功します。" }
-    ],
-    [ // Bài 6
-        { vietnamese: "Nỗ lực", kanji: "努力", hiragana: "どりょく", example: "毎日努力しています。" },
-        { vietnamese: "Tự tin", kanji: "自信", hiragana: "じしん", example: "自信を持って話してください。" }
-    ],
-    [ // Bài 7
-        { vietnamese: "Công bằng", kanji: "公平", hiragana: "こうへい", example: "公平な判断が必要です。" },
-        { vietnamese: "Hy vọng", kanji: "希望", hiragana: "きぼう", example: "希望を捨てないでください。" }
-    ],
-    [ // Bài 8
-        { vietnamese: "Tôn trọng", kanji: "尊敬", hiragana: "そんけい", example: "先生を尊敬しています。" },
-        { vietnamese: "Hòa bình", kanji: "平和", hiragana: "へいわ", example: "世界平和を願います。" }
-    ],
-    [ // Bài 9
-        { vietnamese: "Trí tuệ", kanji: "知恵", hiragana: "ちえ", example: "知恵を活かして問題を解決します。" },
-        { vietnamese: "Tình yêu", kanji: "愛情", hiragana: "あいじょう", example: "愛情を込めて育てます。" }
-    ],
-    [ // Bài 10
-        { vietnamese: "Thử thách", kanji: "挑戦", hiragana: "ちょうせん", example: "新しい挑戦を始めます。" },
-        { vietnamese: "Cơ hội", kanji: "機会", hiragana: "きかい", example: "この機会を逃さないでください。" }
-    ],
-    [ // Bài 11
-        { vietnamese: "Đồng cảm", kanji: "共感", hiragana: "きょうかん", example: "彼の気持ちに共感します。" },
-        { vietnamese: "Chăm chỉ", kanji: "勤勉", hiragana: "きんべん", example: "勤勉な学生が好きです。" }
-    ],
-    [ // Bài 12
-        { vietnamese: "Tò mò", kanji: "好奇", hiragana: "こうき", example: "好奇心が強い子供です。" },
-        { vietnamese: "Truyền thống", kanji: "伝統", hiragana: "でんとう", example: "伝統を守ることは大切です。" }
-    ],
-    [ // Bài 13
-        { vietnamese: "Hạnh phúc", kanji: "幸福", hiragana: "こうふく", example: "幸福な生活を送りたい。" },
-        { vietnamese: "Tình bạn", kanji: "友情", hiragana: "ゆうじょう", example: "友情は大切なものです。" }
-    ],
-    [ // Bài 14
-        { vietnamese: "Sáng tạo", kanji: "創造", hiragana: "そうぞう", example: "創造的なアイデアを考えます。" },
-        { vietnamese: "Độc lập", kanji: "独立", hiragana: "どくりつ", example: "独立した生活を始めます。" }
-    ],
-    [ // Bài 15
-        { vietnamese: "An toàn", kanji: "安全", hiragana: "あんぜん", example: "安全第一で行動します。" },
-        { vietnamese: "Tự hào", kanji: "誇り", hiragana: "ほこり", example: "自分の国を誇りに思います。" }
-    ],
-    [ // Bài 16
-        { vietnamese: "Thành thật", kanji: "正直", hiragana: "しょうじき", example: "正直に話してください。" },
-        { vietnamese: "Hiểu biết", kanji: "理解", hiragana: "りかい", example: "相手の立場を理解します。" }
-    ],
-    [ // Bài 17
-        { vietnamese: "Đoàn kết", kanji: "団結", hiragana: "だんけつ", example: "団結して目標を達成します。" },
-        { vietnamese: "Cảm hứng", kanji: "感動", hiragana: "かんどう", example: "その話に感動しました。" }
-    ],
-    [ // Bài 18
-        { vietnamese: "Tập trung", kanji: "集中", hiragana: "しゅうちゅう", example: "仕事に集中してください。" },
-        { vietnamese: "Bền bỉ", kanji: "持続", hiragana: "じぞく", example: "持続可能な開発を目指します。" }
-    ],
-    [ // Bài 19
-        { vietnamese: "Lòng biết ơn", kanji: "感謝", hiragana: "かんしゃ", example: "感謝の気持ちを伝えましょう。" },
-        { vietnamese: "Sự tha thứ", kanji: "許し", hiragana: "ゆるし", example: "許し合うことが大切です。" }
-    ],
-    [ // Bài 20
-        { vietnamese: "Tính kiên định", kanji: "固執", hiragana: "こしゅう", example: "目標に固執して努力します。" },
-        { vietnamese: "Tính linh hoạt", kanji: "柔軟", hiragana: "じゅうなん", example: "柔軟な対応が必要です。" }
-    ],
-    [ // Bài 21
-        { vietnamese: "Tính khiêm tốn", kanji: "謙虚", hiragana: "けんきょ", example: "謙虚な態度が大切です。" },
-        { vietnamese: "Sự hào phóng", kanji: "寛大", hiragana: "かんだい", example: "寛大な心を持ちましょう。" }
-    ],
-    [ // Bài 22
-        { vietnamese: "Sự sáng suốt", kanji: "明快", hiragana: "めいかい", example: "明快な説明が必要です。" },
-        { vietnamese: "Tính cẩn thận", kanji: "慎重", hiragana: "しんちょう", example: "慎重に計画を立てます。" }
-    ],
-    [ // Bài 23
-        { vietnamese: "Tính quyết đoán", kanji: "決断", hiragana: "けつだん", example: "決断を下すのは難しいです。" },
-        { vietnamese: "Tính sáng tạo", kanji: "創造性", hiragana: "そうぞうせい", example: "創造性を発揮してください。" }
-    ],
-    [ // Bài 24
-        { vietnamese: "Sự kiên cường", kanji: "強靭", hiragana: "きょうじん", example: "強靭な精神が必要です。" },
-        { vietnamese: "Tính kỷ luật", kanji: "規律", hiragana: "きりつ", example: "規律を守って生活します。" }
-    ],
-    [ // Bài 25
-        { vietnamese: "Sự đồng cảm", kanji: "共感", hiragana: "きょうかん", example: "共感を示すことが大切です。" },
-        { vietnamese: "Tính trung thực", kanji: "誠実", hiragana: "せいじつ", example: "誠実な態度で接します。" }
-    ],
-    [ // Bài 26
-        { vietnamese: "Sự nhiệt tình", kanji: "熱意", hiragana: "ねつい", example: "熱意を持って取り組んでください。" },
-        { vietnamese: "Tính kiên trì", kanji: "根気", hiragana: "こんき", example: "根気強く努力します。" }
-    ],
-    [ // Bài 27
-        { vietnamese: "Sự lạc quan", kanji: "楽観", hiragana: "らっかん", example: "楽観的な考え方が大事です。" },
-        { vietnamese: "Tính tự giác", kanji: "自覚", hiragana: "じかく", example: "責任の自覚が必要です。" }
-    ],
-    [ // Bài 28
-        { vietnamese: "Sự hào hứng", kanji: "熱狂", hiragana: "ねっきょう", example: "熱狂的に応援します。" },
-        { vietnamese: "Tính tự lập", kanji: "自立", hiragana: "じりつ", example: "自立した生活を目指します。" }
-    ],
-    [ // Bài 29
-        { vietnamese: "Sự chân thành", kanji: "真心", hiragana: "まごころ", example: "真心を込めて対応します。" },
-        { vietnamese: "Tính bền vững", kanji: "持続性", hiragana: "じぞくせい", example: "持続性のある計画を作ります。" }
-    ],
-    [ // Bài 30
-        { vietnamese: "Sự thông minh", kanji: "聡明", hiragana: "そうめい", example: "聡明な判断が求められます。" },
-        { vietnamese: "Tính hòa hợp", kanji: "調和", hiragana: "ちょうわ", example: "調和の取れた生活を送ります。" }
     ]
 ];
 

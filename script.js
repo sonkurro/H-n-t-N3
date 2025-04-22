@@ -959,6 +959,7 @@ const lessons = [
         { vietnamese: "TBC", kanji: "TBC", hiragana: "TBC", example: "TBC" },
         { vietnamese: "TBC", kanji: "TBC", hiragana: "TBC", example: "TBC" }
     ]
+    ];
         let currentLesson = 0;
 let currentCard = 0;
 let isFlipped = false;

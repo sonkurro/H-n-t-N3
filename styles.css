@@ -1,5 +1,9 @@
 .card {
     perspective: 1000px;
+    width: 96%;
+    max-width: 400px;
+    height: 250px;
+    margin: 0 auto;
 }
 
 .card-inner {
@@ -23,24 +27,46 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+    background-color: #ebf8ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .card-back {
+    background-color: #f0fff4;
     transform: rotateY(180deg);
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 1rem;
+    overflow-y: auto;
 }
 
 .card-back .content-row {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
+    width: 100%;
 }
 
 .card-back .label {
     min-width: 80px;
     font-weight: bold;
+    color: #2d3748;
 }
 
 .card-back .value {
     flex: 1;
-    text-align: justify;
+    color: #4a5568;
+}
+
+#example {
+    font-style: italic;
+    color: #718096;
 }

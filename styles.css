@@ -4,6 +4,7 @@
     max-width: 400px;
     height: 250px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .card-inner {
@@ -22,6 +23,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
     display: flex;
     align-items: center;
@@ -47,26 +49,4 @@
     text-align: left;
     font-size: 1rem;
     overflow-y: auto;
-}
-
-.card-back .content-row {
-    display: flex;
-    margin-bottom: 0.8rem;
-    width: 100%;
-}
-
-.card-back .label {
-    min-width: 80px;
-    font-weight: bold;
-    color: #2d3748;
-}
-
-.card-back .value {
-    flex: 1;
-    color: #4a5568;
-}
-
-#example {
-    font-style: italic;
-    color: #718096;
 }

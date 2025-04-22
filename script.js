@@ -44,7 +44,19 @@ function displayCard() {
 }
 
 function flipCard() {
-    document.getElementById('flashcard').classList.toggle('flipped');
+    const flashcard = document.getElementById('flashcard');
+    flashcard.classList.toggle('flipped');
+}
+
+// Đảm bảo sự kiện click được gắn đúng cách
+document.addEventListener('DOMContentLoaded', () => {
+    populateLessonSelect();
+    displayCard();
+    
+    // Gắn sự kiện click trực tiếp cho thẻ bài
+    const flashcard = document.getElementById('flashcard');
+    flashcard.addEventListener('click', flipCard);
+});
 }
 
 function nextCard() {

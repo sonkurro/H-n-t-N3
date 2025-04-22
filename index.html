@@ -21,29 +21,29 @@
             <div id="card-counter" class="text-lg font-medium bg-white px-4 py-2 rounded shadow"></div>
         </div>
 
-        <div id="flashcard" class="card mb-6">
-            <div class="card-inner">
-                <div class="card-front">
-                    <span id="front-text"></span>
+        <div id="flashcard" class="card">
+    <div class="card-inner">
+        <div class="card-front">
+            <span id="front-text"></span>
+        </div>
+        <div class="card-back">
+            <div id="back-text">
+                <div class="content-row">
+                    <span class="label">Hán tự:</span>
+                    <span class="value" id="kanji"></span>
                 </div>
-                <div class="card-back">
-                    <div id="back-text">
-                        <div class="content-row">
-                            <span class="label">Hán tự:</span>
-                            <span class="value" id="kanji"></span>
-                        </div>
-                        <div class="content-row">
-                            <span class="label">Hiragana:</span>
-                            <span class="value" id="hiragana"></span>
-                        </div>
-                        <div class="content-row">
-                            <span class="label">Ví dụ:</span>
-                            <span class="value" id="example"></span>
-                        </div>
-                    </div>
+                <div class="content-row">
+                    <span class="label">Hiragana:</span>
+                    <span class="value" id="hiragana"></span>
+                </div>
+                <div class="content-row">
+                    <span class="label">Ví dụ:</span>
+                    <span class="value" id="example"></span>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
         <div class="flex justify-center gap-4">
             <button onclick="prevCard()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 shadow transition">Trước</button>

@@ -958,20 +958,21 @@ const lessons = [
         { vietnamese: "TBC", kanji: "TBC", hiragana: "TBC", example: "TBC" },
         { vietnamese: "TBC", kanji: "TBC", hiragana: "TBC", example: "TBC" },
         { vietnamese: "TBC", kanji: "TBC", hiragana: "TBC", example: "TBC" }
-    ]
-    ];
-        let currentLesson = 0;
+    ] // Đóng mảng Bài 30
+]; // Đóng mảng lessons và kết thúc khai báo
+
+let currentLesson = 0;
 let currentCard = 0;
 let isFlipped = false;
 
 function populateLessonSelect() {
     const lessonSelect = document.getElementById('lessonSelect');
-    lessons.forEach((_, index) => {
+    for (let i = 0; i < lessons.length; i++) {
         const option = document.createElement('option');
-        option.value = index;
-        option.textContent = `Bài ${index + 1}`;
+        option.value = i;
+        option.textContent = `Bài ${i + 1}`;
         lessonSelect.appendChild(option);
-    });
+    }
 }
 
 function displayCard() {
@@ -1022,6 +1023,5 @@ document.getElementById('flipButton').addEventListener('click', flipCard);
 document.getElementById('nextButton').addEventListener('click', nextCard);
 document.getElementById('prevButton').addEventListener('click', prevCard);
 
-// Khởi tạo
 populateLessonSelect();
 displayCard();

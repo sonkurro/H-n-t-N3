@@ -94,7 +94,39 @@ const lessons = [
     { vietnamese: "Tiền lẻ", kanji: "小銭", hiragana: "こぜに", example: "自動販売機に小銭を使います。" },
     { vietnamese: "Chiêu đãi", kanji: "ご馳走", hiragana: "ごちそう", example: "友達にご馳走になりました。" },
     { vietnamese: "Tác giả", kanji: "作者", hiragana: "さくしゃ", example: "この本の作者は有名です。" }
-    ]
+    ],
+    [ // Bài 4
+    { vietnamese: "Tác phẩm", kanji: "作品", hiragana: "さくひん", example: "この作品は有名な画家のものです。" },
+    { vietnamese: "Đồng phục", kanji: "制服", hiragana: "せいふく", example: "学生は制服を着ます。" },
+    { vietnamese: "Chất tẩy rửa", kanji: "洗剤", hiragana: "せんざい", example: "洗剤で服を洗います。" },
+    { vietnamese: "Đáy", kanji: "底", hiragana: "そこ", example: "箱の底に何かがあります。" },
+    { vietnamese: "Tầng hầm", kanji: "地下", hiragana: "ちか", example: "地下に駐車場があります。" },
+    { vietnamese: "Chùa", kanji: "寺", hiragana: "てら", example: "京都には多くの寺があります。" },
+    { vietnamese: "Con đường", kanji: "道路", hiragana: "どうろ", example: "この道路は広いです。" },
+    { vietnamese: "Con dốc", kanji: "坂", hiragana: "さか", example: "坂を上るのは大変です。" },
+    { vietnamese: "Khói", kanji: "煙", hiragana: "けむり", example: "煙が出ています。火事かもしれません。" },
+    { vietnamese: "Tro", kanji: "灰", hiragana: "はい", example: "灰が風に飛ばされました。" },
+    { vietnamese: "Kích cỡ", kanji: "判", hiragana: "はん", example: "この用紙の判はA4です。" },
+    { vietnamese: "Danh thiếp", kanji: "名刺", hiragana: "めいし", example: "名刺を交換しましょう。" },
+    { vietnamese: "Giấy phép", kanji: "免許", hiragana: "めんきょ", example: "運転免許を持っています。" },
+    { vietnamese: "Nhiều", kanji: "多く", hiragana: "おおく", example: "多くの人が集まりました。" },
+    { vietnamese: "Phần đầu", kanji: "前半", hiragana: "ぜんはん", example: "試合の前半は静かでした。" },
+    { vietnamese: "Phần cuối", kanji: "後半", hiragana: "こうはん", example: "映画の後半が面白かったです。" },
+    { vietnamese: "Cao nhất, tuyệt vời", kanji: "最高", hiragana: "さいこう", example: "この料理は最高です！" },
+    { vietnamese: "Tối thiểu, tệ hại", kanji: "最低", hiragana: "さいてい", example: "今日は最低な日だった。" },
+    { vietnamese: "Đầu tiên", kanji: "最初", hiragana: "さいしょ", example: "最初に自己紹介をします。" },
+    { vietnamese: "Cuối cùng", kanji: "最後", hiragana: "さいご", example: "最後まで頑張りましょう。" },
+    { vietnamese: "Tự động", kanji: "自動", hiragana: "じどう", example: "このドアは自動で開きます。" },
+    { vietnamese: "Chủng loại", kanji: "種類", hiragana: "しゅるい", example: "いろいろな種類の花があります。" },
+    { vietnamese: "Tính cách", kanji: "性格", hiragana: "せいかく", example: "彼は明るい性格です。" },
+    { vietnamese: "Tính chất", kanji: "性質", hiragana: "せいしつ", example: "この金属は硬い性質を持っています。" },
+    { vietnamese: "Số thứ tự", kanji: "順番", hiragana: "じゅんばん", example: "順番を守ってください。" },
+    { vietnamese: "Phiên, lượt", kanji: "番", hiragana: "ばん", example: "次は私の番です。" },
+    { vietnamese: "Phương pháp", kanji: "方法", hiragana: "ほうほう", example: "いい勉強方法を知っていますか？" },
+    { vietnamese: "Sản phẩm", kanji: "製品", hiragana: "せいひん", example: "新しい製品が発売されました。" },
+    { vietnamese: "Tăng giá", kanji: "値上がり", hiragana: "ねあがり", example: "ガソリンの値上がりが続いています。" },
+    { vietnamese: "Tươi, sống", kanji: "生", hiragana: "なま", example: "生の魚を食べました。" }
+],
 ];
 
 let currentLesson = 0;

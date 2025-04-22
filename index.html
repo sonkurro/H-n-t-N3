@@ -3,47 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Học tiếng Nhật N3 - Thầy Sơn</title>
+    <title>Ôn từ vựng N3 - Thầy Sơn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Học tiếng Nhật N3 - Thầy Sơn</h1>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-4">
+    <h1 class="text-3xl font-bold mb-6">Ôn từ vựng N3 - Thầy Sơn</h1>
+    
+    <div class="mb-6 flex items-center space-x-4">
         <div>
-            <label for="lessonSelect">Chọn bài học:</label>
-            <select id="lessonSelect"></select>
+            <label for="lesson-select" class="text-lg font-semibold mr-2">Chọn bài:</label>
+            <select id="lesson-select" onchange="goToLesson()" class="p-2 border rounded bg-white">
+                <!-- Options will be populated by JavaScript -->
+            </select>
         </div>
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <div id="vietnamese-front" class="vietnamese"></div>
-                    <div>Kanji: ???</div>
-                    <div>Hiragana: ???</div>
-                    <div>Ví dụ: ???</div>
-                </div>
-                <div class="card-back">
+        <div id="card-counter" class="text-lg font-medium"></div>
+    </div>
+
+    <div id="flashcard" class="card w-96 h-64 bg-white shadow-lg cursor-pointer" onclick="flipCard()">
+        <div class="card-inner">
+            <div class="card-front bg-blue-100 p-6 text-2xl font-semibold text-center">
+                <span id="front-text"></span>
+            </div>
+            <div class="card-back bg-green-100 p-6 text-lg text-left">
+                <div id="back-text">
                     <div class="content-row">
-                        <span class="label">Kanji:</span>
-                        <span class="value" id="kanji-back"></span>
+                        <span class="label">Hán tự:</span>
+                        <span class="value" id="kanji"></span>
                     </div>
                     <div class="content-row">
                         <span class="label">Hiragana:</span>
-                        <span class="value" id="hiragana-back"></span>
+                        <span class="value" id="hiragana"></span>
                     </div>
                     <div class="content-row">
                         <span class="label">Ví dụ:</span>
-                        <span class="value" id="example-back"></span>
+                        <span class="value" id="example"></span>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="cardCount"></div>
-        <div class="buttons">
-            <button id="prevButton">Previous</button>
-            <button id="flipButton">Flip</button>
-            <button id="nextButton">Next</button>
-        </div>
     </div>
-    <script src="flashcards.js"></script>
+
+    <div class="mt-6 flex space-x-4">
+        <button onclick="prevCard()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Trước</button>
+        <button onclick="nextCard()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Tiếp</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

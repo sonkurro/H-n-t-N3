@@ -237,52 +237,66 @@ let currentLesson = 0;
 let currentCard = 0;
 
 function populateLessonSelect() {
-    const select = document.getElementById('lesson-select');
-    for (let i = 1; i <= lessons.length; i++) {
+    const lessonSelect = document.getElementById('lessonSelect');
+    for (let i = 0; i < lessons.length; i++) {
         const option = document.createElement('option');
-        option.value = i - 1;
-        option.textContent = `Bài ${i}`;
-        select.appendChild(option);
+        option.value = i;
+        option.textContent = `Bài ${i + 1}`;
+        lessonSelect.appendChild(option);
     }
 }
 
 function displayCard() {
     const card = lessons[currentLesson][currentCard];
-    document.getElementById('front-text').textContent = card.vietnamese;
-    document.getElementById('kanji').textContent = card.kanji;
-    document.getElementById('hiragana').textContent = card.hiragana;
-    document.getElementById('example').textContent = card.example;
-    document.getElementById('flashcard').classList.remove('flipped');
-    document.getElementById('lesson-select').value = currentLesson;
-    document.getElementById('card-counter').textContent = `Từ ${currentCard + 1}/${lessons[currentLesson].length}`;
+    document.getElementById('vietnamese-front').textContent = card.vietnamese;
+    document.getElementById('kanji-back').textContent = card.kanji;
+    document.getElementById('hiragana-back').textContent = card.hiragana;
+    document.getElementById('example-back').textContent = card.example;
+    document.getElementById('cardCount').textContent = `Card ${currentCard + 1} of ${lessons[currentLesson].length}`;
+    updateButtonState();
+}
+
+function updateButtonState() {
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+    prevButton.disabled = currentCard === 0;
+    nextButton.disabled = currentCard === lessons[currentLesson].length - 1;
 }
 
 function flipCard() {
-    document.getElementById('flashcard').classList.toggle('flipped');
+    const card = document.querySelector('.card');
+    card.classList.toggle('flipped');
 }
 
 function nextCard() {
-    currentCard = (currentCard + 1) % lessons[currentLesson].length;
-    if (currentCard === 0 && currentLesson < lessons.length - 1) {
-        currentLesson++;
+    if (currentCard < lessons[currentLesson].length - 1) {
+        currentCard++;
+        const card = document.querySelector('.card');
+        card.classList.remove('flipped');
+        displayCard();
     }
-    displayCard();
 }
 
 function prevCard() {
-    currentCard = (currentCard - 1 + lessons[currentLesson].length) % lessons[currentLesson].length;
-    if (currentCard === lessons[currentLesson].length - 1 && currentLesson > 0) {
-        currentLesson--;
+    if (currentCard > 0) {
+        currentCard--;
+        const card = document.querySelector('.card');
+        card.classList.remove('flipped');
+        displayCard();
     }
-    displayCard();
 }
 
-function goToLesson() {
-    currentLesson = parseInt(document.getElementById('lesson-select').value);
+document.getElementById('lessonSelect').addEventListener('change', (event) => {
+    currentLesson = parseInt(event.target.value);
     currentCard = 0;
+    const card = document.querySelector('.card');
+    card.classList.remove('flipped');
     displayCard();
-}
+});
 
-// Initialize
+document.getElementById('flipButton').addEventListener('click', flipCard);
+document.getElementById('nextButton').addEventListener('click', nextCard);
+document.getElementById('prevButton').addEventListener('click', prevCard);
+
 populateLessonSelect();
 displayCard();

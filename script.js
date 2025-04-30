@@ -896,12 +896,47 @@ const lessons = [
   { vietnamese: "Xào", kanji: "炒める", hiragana: "いためる", example: "野菜を炒めて食べる。" }
     ],
     [ // Bài 29
-        { vietnamese: "Sự chân thành", kanji: "真心", hiragana: "まごころ", example: "真心を込めて対応します。" },
-        { vietnamese: "Tính bền vững", kanji: "持続性", hiragana: "じぞくせい", example: "持続性のある計画を作ります。" }
+        { vietnamese: "Bị nướng/cháy", kanji: "焼ける", hiragana: "やける", example: "パンがよく焼けた。" },
+  { vietnamese: "Nướng, rán", kanji: "焼く", hiragana: "やく", example: "魚を焼いて食べる。" },
+  { vietnamese: "Luộc", kanji: "茹でる", hiragana: "ゆでる", example: "卵を茹でる。" },
+  { vietnamese: "Chiên rán", kanji: "揚げる", hiragana: "あげる", example: "天ぷらを揚げる。" },
+  { vietnamese: "Hấp", kanji: "蒸す", hiragana: "むす", example: "肉まんを蒸す。" },
+  { vietnamese: "Ngủ say", kanji: "", hiragana: "ぐっすり", example: "ぐっすり眠った。" },
+  { vietnamese: "Nghiêm túc", kanji: "", hiragana: "きちんと", example: "きちんと片付ける。" },
+  { vietnamese: "Chắc chắn", kanji: "", hiragana: "しっかり", example: "しっかり勉強する。" },
+  { vietnamese: "Rõ ràng", kanji: "", hiragana: "はっきり", example: "はっきりと答える。" },
+  { vietnamese: "Kiên nhẫn", kanji: "", hiragana: "じっと", example: "じっと待つ。" },
+  { vietnamese: "Nhẹ nhàng", kanji: "", hiragana: "そっと", example: "そっとドアを閉める。" },
+  { vietnamese: "Riêng biệt", kanji: "別々", hiragana: "べつべつ", example: "別々に支払う。" },
+  { vietnamese: "Mỗi cái", kanji: "", hiragana: "それぞれ", example: "それぞれの意見を聞く。" },
+  { vietnamese: "Lẫn nhau", kanji: "互いに", hiragana: "たがいに", example: "互いに助け合う。" },
+  { vietnamese: "Trực tiếp", kanji: "直接", hiragana: "ちょくせつ", example: "直接話し合う。" },
+  { vietnamese: "Thực sự", kanji: "本当に", hiragana: "ほんとうに", example: "本当に嬉しい。" },
+  { vietnamese: "Chắc chắn", kanji: "必ず", hiragana: "かならず", example: "必ず連絡する。" },
+  { vietnamese: "Tuyệt đối", kanji: "絶対", hiragana: "ぜったい", example: "絶対に約束を守る。" },
+  { vietnamese: "Đặc biệt", kanji: "特に", hiragana: "とくに", example: "特に問題ない。" },
+  { vietnamese: "Miễn phí", kanji: "", hiragana: "ただ", example: "ただで手に入れた。" },
+  { vietnamese: "Tối thiểu", kanji: "少なくとも", hiragana: "すくなくとも", example: "少なくとも3人は必要だ。" },
+  { vietnamese: "Quyết không", kanji: "決して", hiragana: "けっして", example: "決して忘れない。" },
+  { vietnamese: "Một chút cũng không", kanji: "少しも", hiragana: "すこしも", example: "少しも疲れていない。" },
+  { vietnamese: "Hoàn toàn không", kanji: "ちっとも", hiragana: "ちっとも", example: "ちっとも分からない。" },
+  { vietnamese: "Hoàn toàn", kanji: "全く", hiragana: "まったく", example: "全く新しい方法。" },
+  { vietnamese: "Rốt cuộc", kanji: "一体", hiragana: "いったい", example: "一体どうしたの？" },
+  { vietnamese: "Dù thế nào", kanji: "どんなに", hiragana: "どんなに", example: "どんなに頑張っても。" },
+  { vietnamese: "Bằng mọi giá", kanji: "どうしても", hiragana: "どうしても", example: "どうしてもやりたい。" },
+  { vietnamese: "Đơn giản là", kanji: "", hiragana: "ただ", example: "ただ見ていただけだ。" },
+  { vietnamese: "Tuyệt đối không", kanji: "絶対に", hiragana: "ぜったいに", example: "絶対に許さない。" }
     ],
     [ // Bài 30
-        { vietnamese: "Sự thông minh", kanji: "聡明", hiragana: "そうめい", example: "聡明な判断が求められます。" },
-        { vietnamese: "Tính hòa hợp", kanji: "調和", hiragana: "ちょうわ", example: "調和の取れた生活を送ります。" }
+        { vietnamese: "Chỉ, mỗi", kanji: "", hiragana: "たった", example: "たった5分で到着した。" },
+  { vietnamese: "Chỉ là, đơn thuần là", kanji: "本の", hiragana: "ほんの", example: "ほんの気持ちです。" },
+  { vietnamese: "Vì vậy", kanji: "", hiragana: "それで", example: "それで、どうしましたか？" },
+  { vietnamese: "Do đó", kanji: "", hiragana: "そこで", example: "そこで会議を終了します。" },
+  { vietnamese: "Thêm nữa", kanji: "その上", hiragana: "そのうえ", example: "その上、雨まで降ってきた。" },
+  { vietnamese: "Lại, lại còn", kanji: "", hiragana: "また", example: "また失敗してしまった。" },
+  { vietnamese: "Hoặc", kanji: "", hiragana: "または", example: "コーヒーまたは紅茶を選べます。" },
+  { vietnamese: "Hay là", kanji: "", hiragana: "それとも", example: "映画に行く？それとも食事？" },
+  { vietnamese: "Nói cách khác", kanji: "", hiragana: "つまり", example: "つまり、そういうことですか？" }
     ]
 ];
 
